@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { AwesomeButton } from 'react-awesome-button'
 import Quote from  './components/quote';
+import 'react-awesome-button/dist/themes/theme-blue.css';
 import './App.css';
 var FontAwesome = require('react-fontawesome');
 
@@ -42,8 +44,12 @@ class App extends Component {
     return (
       <div className='App'>
         <h1>Scrum Master as a Service</h1>
+
         <Quote quote={this.state.selectedQuote} />
-        <button onClick={this.selectQuote}>Impart some wisdom <FontAwesome name="hat-wizard" /></button>
+
+        <AwesomeButton type="primary" action={this.selectQuote}>
+          Impart wisdom <FontAwesome name="hat-wizard" />
+        </AwesomeButton>
       </div>
     );
   }
