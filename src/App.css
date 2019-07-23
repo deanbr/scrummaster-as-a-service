@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  min-height: calc(100vh - 100px);
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 50px;
 }
 
 .App-logo {
