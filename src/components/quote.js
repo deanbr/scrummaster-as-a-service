@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 class Quote extends Component {
   render() {
-    return <div>{this.props.quote}</div>;
+    return <div className='app-quote'>
+      <span>{this.props.quote}</span>
+    </div>;
   }
 }
 

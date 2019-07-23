@@ -12,12 +12,18 @@ class App extends Component {
     selectedQuote: null
   }
 
+  selectQuote = () => {
+    const rand = Math.round(Math.random() * (this.state.quotes.length - 1));
+    const quote = this.state.quotes[rand];
+    this.setState({selectedQuote: quote})
+  }
+
   render() {
     return (
       <div className='App'>
         <h1>Scrum Master as a Service</h1>
         <Quote quote={this.state.selectedQuote} />
-        <button>Impart some wisdom <FontAwesome name="hat-wizard" /></button>
+        <button onClick={this.selectQuote}>Impart some wisdom <FontAwesome name="hat-wizard" /></button>
       </div>
     );
   }
