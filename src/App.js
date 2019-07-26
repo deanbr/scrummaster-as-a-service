@@ -30,6 +30,7 @@ class App extends Component {
       'Let’s think back to the gospel of Luke. - That one’s taken.',
       'I think we’re in violent agreement.',
       'I have no idea',
+      'Even I have no idea what\'s going on up here',
     ],
     selectedQuote: null
   }
